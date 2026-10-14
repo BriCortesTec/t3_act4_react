@@ -25,7 +25,7 @@ function App() {
   const visibles = mostrarCompletadas ? tareas : tareas.filter((t) => !t.completada);
 
   return (
-    <div className="app">
+    <div className="contenedor">
       <Saludo />
 
       <div className="form">
@@ -63,3 +63,4 @@ function App() {
   );
 }
 export default App;
+

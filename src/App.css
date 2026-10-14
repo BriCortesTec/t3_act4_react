@@ -1,8 +1,124 @@
-﻿.app { max-width: 480px; margin: 2rem auto; font-family: sans-serif; text-align: center; }
-.form { display: flex; gap: .5rem; margin-bottom: 1rem; }
-.form input { flex: 1; padding: .5rem; }
-button { padding: .5rem 1rem; cursor: pointer; }
-ul { list-style: none; padding: 0; }
-.tarea { display: flex; justify-content: space-between; padding: .6rem; border-bottom: 1px solid #ccc; }
-.tarea span { cursor: pointer; }
-.tarea.hecha span { text-decoration: line-through; color: gray; }
+﻿:root {
+    --color-fondo: rgb(101, 130, 85);
+    --color-contenedor: white;
+    --color-primario: rgb(49, 86, 34);
+    --color-texto: rgb(57, 57, 65);
+    --color-exito: rgb(74, 143, 95);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-fondo);
+    font-family: 'consolas', sans-serif;
+    color: var(--color-texto);
+}
+
+#root {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 450px;
+    padding: 30px;
+    background-color: var(--color-contenedor);
+    border-radius: 25px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #52a3da;
+}
+
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--color-primario);
+    color: rgb(237, 239, 170);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+p {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    gap: 10px;
+}
+
+.form input {
+    flex: 1;
+}
+
+.form button {
+    width: auto;
+    margin-top: 0;
+    padding: 12px 18px;
+}
+
+ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.tarea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.tarea span {
+    flex: 1;
+    cursor: pointer;
+    word-break: break-word;
+}
+
+.tarea.hecha span {
+    text-decoration: line-through;
+    color: var(--color-exito);
+}
+
+.tarea button {
+    width: auto;
+    margin-top: 0;
+    padding: 6px 12px;
+    font-size: 14px;
+}
