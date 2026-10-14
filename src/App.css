@@ -122,3 +122,43 @@ ul {
     padding: 6px 12px;
     font-size: 14px;
 }
+
+/* Ajustes sobre los estilos por defecto de Vite */
+#root {
+    max-width: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2em;
+    color: var(--color-texto);
+}
+
+input {
+    background-color: white;
+    color: var(--color-texto);
+}
+
+/* Ajustes sobre los estilos por defecto de Vite */
+#root {
+    max-width: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2em;
+    color: var(--color-texto);
+}
+
+input {
+    background-color: white;
+    color: var(--color-texto);
+}
